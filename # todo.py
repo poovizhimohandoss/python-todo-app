@@ -25,3 +25,12 @@ if __name__ == "__main__":
     print(view_tasks())
     print(remove_task('Learn Python'))
     print(view_tasks())
+
+# Adding a simple authentication function
+
+def authenticate(user):
+    valid_users = ['admin', 'guest']
+    if user in valid_users:
+        return f'Welcome, {user}!'
+    else:
+        return 'Access denied!'
